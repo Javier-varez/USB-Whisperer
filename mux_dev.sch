@@ -1,0 +1,317 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 7 9
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Interface_USB:FSUSB42MUX U?
+U 1 1 61D34F4E
+P 5000 3600
+AR Path="/61BE2A8A/61D34F4E" Ref="U?"  Part="1" 
+AR Path="/61BE2A8A/61D2FA96/61D34F4E" Ref="U9"  Part="1" 
+AR Path="/61BE2A8A/61D663B4/61D34F4E" Ref="U12"  Part="1" 
+AR Path="/61BE2A8A/61D84977/61D34F4E" Ref="U15"  Part="1" 
+F 0 "U?" H 5000 3019 50  0000 C CNN
+F 1 "FSUSB42MUX" H 5000 3110 50  0000 C CNN
+F 2 "Package_SO:MSOP-10_3x3mm_P0.5mm" H 5000 2800 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/FSUSB42-D.PDF" H 5000 3500 50  0001 C CNN
+	1    5000 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Interface_USB:FSUSB42MUX U?
+U 1 1 61D34F54
+P 6750 4100
+AR Path="/61BE2A8A/61D34F54" Ref="U?"  Part="1" 
+AR Path="/61BE2A8A/61D2FA96/61D34F54" Ref="U11"  Part="1" 
+AR Path="/61BE2A8A/61D663B4/61D34F54" Ref="U14"  Part="1" 
+AR Path="/61BE2A8A/61D84977/61D34F54" Ref="U17"  Part="1" 
+F 0 "U?" H 6750 3519 50  0000 C CNN
+F 1 "FSUSB42MUX" H 6750 3610 50  0000 C CNN
+F 2 "Package_SO:MSOP-10_3x3mm_P0.5mm" H 6750 3300 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/FSUSB42-D.PDF" H 6750 4000 50  0001 C CNN
+	1    6750 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 61D34F5A
+P 5000 3150
+AR Path="/61BE2A8A/61D34F5A" Ref="#PWR?"  Part="1" 
+AR Path="/61BE2A8A/61D2FA96/61D34F5A" Ref="#PWR029"  Part="1" 
+AR Path="/61BE2A8A/61D663B4/61D34F5A" Ref="#PWR035"  Part="1" 
+AR Path="/61BE2A8A/61D84977/61D34F5A" Ref="#PWR041"  Part="1" 
+F 0 "#PWR?" H 5000 3000 50  0001 C CNN
+F 1 "+5V" H 5015 3323 50  0000 C CNN
+F 2 "" H 5000 3150 50  0001 C CNN
+F 3 "" H 5000 3150 50  0001 C CNN
+	1    5000 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 3150 5000 3200
+$Comp
+L power:+5V #PWR?
+U 1 1 61D34F61
+P 6750 3650
+AR Path="/61BE2A8A/61D34F61" Ref="#PWR?"  Part="1" 
+AR Path="/61BE2A8A/61D2FA96/61D34F61" Ref="#PWR033"  Part="1" 
+AR Path="/61BE2A8A/61D663B4/61D34F61" Ref="#PWR039"  Part="1" 
+AR Path="/61BE2A8A/61D84977/61D34F61" Ref="#PWR045"  Part="1" 
+F 0 "#PWR?" H 6750 3500 50  0001 C CNN
+F 1 "+5V" H 6765 3823 50  0000 C CNN
+F 2 "" H 6750 3650 50  0001 C CNN
+F 3 "" H 6750 3650 50  0001 C CNN
+	1    6750 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 3650 6750 3700
+Wire Wire Line
+	5400 3800 5450 3800
+Wire Wire Line
+	5450 3800 5450 4000
+Wire Wire Line
+	5400 3700 5550 3700
+$Comp
+L power:+5V #PWR?
+U 1 1 61D34F6B
+P 6750 2300
+AR Path="/61BE2A8A/61D34F6B" Ref="#PWR?"  Part="1" 
+AR Path="/61BE2A8A/61D2FA96/61D34F6B" Ref="#PWR031"  Part="1" 
+AR Path="/61BE2A8A/61D663B4/61D34F6B" Ref="#PWR037"  Part="1" 
+AR Path="/61BE2A8A/61D84977/61D34F6B" Ref="#PWR043"  Part="1" 
+F 0 "#PWR?" H 6750 2150 50  0001 C CNN
+F 1 "+5V" H 6765 2473 50  0000 C CNN
+F 2 "" H 6750 2300 50  0001 C CNN
+F 3 "" H 6750 2300 50  0001 C CNN
+	1    6750 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 2300 6750 2350
+$Comp
+L power:GND #PWR?
+U 1 1 61D34F72
+P 6750 3200
+AR Path="/61BE2A8A/61D34F72" Ref="#PWR?"  Part="1" 
+AR Path="/61BE2A8A/61D2FA96/61D34F72" Ref="#PWR032"  Part="1" 
+AR Path="/61BE2A8A/61D663B4/61D34F72" Ref="#PWR038"  Part="1" 
+AR Path="/61BE2A8A/61D84977/61D34F72" Ref="#PWR044"  Part="1" 
+F 0 "#PWR?" H 6750 2950 50  0001 C CNN
+F 1 "GND" H 6755 3027 50  0000 C CNN
+F 2 "" H 6750 3200 50  0001 C CNN
+F 3 "" H 6750 3200 50  0001 C CNN
+	1    6750 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61D34F78
+P 6750 4550
+AR Path="/61BE2A8A/61D34F78" Ref="#PWR?"  Part="1" 
+AR Path="/61BE2A8A/61D2FA96/61D34F78" Ref="#PWR034"  Part="1" 
+AR Path="/61BE2A8A/61D663B4/61D34F78" Ref="#PWR040"  Part="1" 
+AR Path="/61BE2A8A/61D84977/61D34F78" Ref="#PWR046"  Part="1" 
+F 0 "#PWR?" H 6750 4300 50  0001 C CNN
+F 1 "GND" H 6755 4377 50  0000 C CNN
+F 2 "" H 6750 4550 50  0001 C CNN
+F 3 "" H 6750 4550 50  0001 C CNN
+	1    6750 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61D34F7E
+P 5000 4050
+AR Path="/61BE2A8A/61D34F7E" Ref="#PWR?"  Part="1" 
+AR Path="/61BE2A8A/61D2FA96/61D34F7E" Ref="#PWR030"  Part="1" 
+AR Path="/61BE2A8A/61D663B4/61D34F7E" Ref="#PWR036"  Part="1" 
+AR Path="/61BE2A8A/61D84977/61D34F7E" Ref="#PWR042"  Part="1" 
+F 0 "#PWR?" H 5000 3800 50  0001 C CNN
+F 1 "GND" H 5005 3877 50  0000 C CNN
+F 2 "" H 5000 4050 50  0001 C CNN
+F 3 "" H 5000 4050 50  0001 C CNN
+	1    5000 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 3150 6750 3200
+Wire Wire Line
+	5000 4000 5000 4050
+Wire Wire Line
+	6750 4500 6750 4550
+Text Label 3950 3400 0    50   ~ 0
+TARGET_D+
+$Comp
+L Interface_USB:FSUSB42MUX U?
+U 1 1 61D34F88
+P 6750 2750
+AR Path="/61BE2A8A/61D34F88" Ref="U?"  Part="1" 
+AR Path="/61BE2A8A/61D2FA96/61D34F88" Ref="U10"  Part="1" 
+AR Path="/61BE2A8A/61D663B4/61D34F88" Ref="U13"  Part="1" 
+AR Path="/61BE2A8A/61D84977/61D34F88" Ref="U16"  Part="1" 
+F 0 "U?" H 6750 2169 50  0000 C CNN
+F 1 "FSUSB42MUX" H 6750 2260 50  0000 C CNN
+F 2 "Package_SO:MSOP-10_3x3mm_P0.5mm" H 6750 1950 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/FSUSB42-D.PDF" H 6750 2650 50  0001 C CNN
+	1    6750 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 3400 5450 3400
+Wire Wire Line
+	5450 3400 5450 2550
+Wire Wire Line
+	5400 3500 5550 3500
+Wire Wire Line
+	5550 3500 5550 2650
+Text Label 6050 2850 0    50   ~ 0
+OE
+Text Label 4300 3700 0    50   ~ 0
+OE_N
+Text Label 6050 4200 0    50   ~ 0
+OE
+Wire Wire Line
+	4600 3400 3950 3400
+Text Label 3950 3500 0    50   ~ 0
+TARGET_D-
+Wire Wire Line
+	4600 3500 3950 3500
+Text Label 7250 2850 0    50   ~ 0
+UART_TX
+Text Label 7250 2950 0    50   ~ 0
+UART_RX
+Text Label 7250 2550 0    50   ~ 0
+UART_RX
+Text Label 7250 2650 0    50   ~ 0
+UART_TX
+Wire Wire Line
+	7250 3900 7150 3900
+Wire Wire Line
+	7150 4000 7250 4000
+Wire Wire Line
+	7250 4200 7150 4200
+Wire Wire Line
+	7150 4300 7250 4300
+Wire Wire Line
+	7250 2550 7150 2550
+Wire Wire Line
+	7150 2650 7250 2650
+Wire Wire Line
+	7150 2850 7250 2850
+Wire Wire Line
+	7250 2950 7150 2950
+Text Label 7250 3900 0    50   ~ 0
+I2C_SCL
+Text Label 7250 4000 0    50   ~ 0
+I2C_SDA
+Text Label 7250 4200 0    50   ~ 0
+HUB_PORT_D+
+Text Label 7250 4300 0    50   ~ 0
+HUB_PORT_D-
+Wire Wire Line
+	5550 2650 6350 2650
+Wire Wire Line
+	5450 2550 6350 2550
+Wire Wire Line
+	5550 3700 5550 3900
+Wire Wire Line
+	5550 3900 6350 3900
+Wire Wire Line
+	5450 4000 6350 4000
+Text Label 6050 2950 0    50   ~ 0
+SEL0
+Text Label 4300 3800 0    50   ~ 0
+SEL1
+Wire Wire Line
+	6050 2850 6350 2850
+Wire Wire Line
+	6050 4200 6350 4200
+Wire Wire Line
+	4300 3700 4600 3700
+Text HLabel 2450 2650 0    50   Input ~ 0
+OE_N
+Text HLabel 2450 2750 0    50   Input ~ 0
+SEL0
+Text HLabel 2450 2850 0    50   Input ~ 0
+SEL1
+Text Label 2600 2650 0    50   ~ 0
+OE_N
+Wire Wire Line
+	2600 2650 2450 2650
+Text Label 2600 2750 0    50   ~ 0
+SEL0
+Text Label 2600 2850 0    50   ~ 0
+SEL1
+Wire Wire Line
+	2450 2750 2600 2750
+Wire Wire Line
+	2600 2850 2450 2850
+Text HLabel 2450 3050 0    50   Input ~ 0
+TARGET_D+
+Text HLabel 2450 3150 0    50   Input ~ 0
+TARGET_D-
+Text Label 2600 3050 0    50   ~ 0
+TARGET_D+
+Wire Wire Line
+	2600 3050 2450 3050
+Text Label 2600 3150 0    50   ~ 0
+TARGET_D-
+Wire Wire Line
+	2450 3150 2600 3150
+Text Label 6050 4300 0    50   ~ 0
+SEL0
+Wire Wire Line
+	6350 4300 6050 4300
+Wire Wire Line
+	6050 2950 6350 2950
+Text HLabel 2450 3300 0    50   Input ~ 0
+UART_TX
+Text HLabel 2450 3400 0    50   Input ~ 0
+UART_RX
+Text Label 2600 3300 0    50   ~ 0
+UART_TX
+Wire Wire Line
+	2600 3300 2450 3300
+Text Label 2600 3400 0    50   ~ 0
+UART_RX
+Wire Wire Line
+	2450 3400 2600 3400
+Text HLabel 2450 3550 0    50   Input ~ 0
+I2C_SCL
+Text HLabel 2450 3650 0    50   Input ~ 0
+I2C_SDA
+Text Label 2600 3550 0    50   ~ 0
+I2C_SCL
+Wire Wire Line
+	2600 3550 2450 3550
+Text Label 2600 3650 0    50   ~ 0
+I2C_SDA
+Wire Wire Line
+	2450 3650 2600 3650
+Text HLabel 2450 3800 0    50   Input ~ 0
+HUB_PORT_D+
+Text HLabel 2450 3900 0    50   Input ~ 0
+HUB_PORT_D-
+Text Label 2600 3800 0    50   ~ 0
+HUB_PORT_D+
+Wire Wire Line
+	2600 3800 2450 3800
+Text Label 2600 3900 0    50   ~ 0
+HUB_PORT_D-
+Wire Wire Line
+	2450 3900 2600 3900
+Wire Wire Line
+	4300 3800 4600 3800
+$EndSCHEMATC
