@@ -1,0 +1,173 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 9 12
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Interface_USB:FSUSB42MUX U?
+U 1 1 61A83D7D
+P 5800 3900
+AR Path="/61BE2A8A/61A83D7D" Ref="U?"  Part="1" 
+AR Path="/61BE2A8A/61D2FA96/61A83D7D" Ref="U?"  Part="1" 
+AR Path="/61BE2A8A/61D663B4/61A83D7D" Ref="U?"  Part="1" 
+AR Path="/61BE2A8A/61D84977/61A83D7D" Ref="U?"  Part="1" 
+AR Path="/61BE2A8A/61A7ECF3/61A83D7D" Ref="U19"  Part="1" 
+F 0 "U19" H 5800 3319 50  0000 C CNN
+F 1 "FSUSB42MUX" H 5800 3410 50  0000 C CNN
+F 2 "Package_SO:MSOP-10_3x3mm_P0.5mm" H 5800 3100 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/FSUSB42-D.PDF" H 5800 3800 50  0001 C CNN
+	1    5800 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Interface_USB:FSUSB42MUX U?
+U 1 1 61A83D83
+P 7050 4200
+AR Path="/61BE2A8A/61A83D83" Ref="U?"  Part="1" 
+AR Path="/61BE2A8A/61D2FA96/61A83D83" Ref="U?"  Part="1" 
+AR Path="/61BE2A8A/61D663B4/61A83D83" Ref="U?"  Part="1" 
+AR Path="/61BE2A8A/61D84977/61A83D83" Ref="U?"  Part="1" 
+AR Path="/61BE2A8A/61A7ECF3/61A83D83" Ref="U20"  Part="1" 
+F 0 "U20" H 7050 3619 50  0000 C CNN
+F 1 "FSUSB42MUX" H 7050 3710 50  0000 C CNN
+F 2 "Package_SO:MSOP-10_3x3mm_P0.5mm" H 7050 3400 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/FSUSB42-D.PDF" H 7050 4100 50  0001 C CNN
+	1    7050 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 3450 5800 3500
+Wire Wire Line
+	7050 3750 7050 3800
+$Comp
+L power:GND #PWR?
+U 1 1 61A83DA7
+P 7050 4650
+AR Path="/61BE2A8A/61A83DA7" Ref="#PWR?"  Part="1" 
+AR Path="/61BE2A8A/61D2FA96/61A83DA7" Ref="#PWR?"  Part="1" 
+AR Path="/61BE2A8A/61D663B4/61A83DA7" Ref="#PWR?"  Part="1" 
+AR Path="/61BE2A8A/61D84977/61A83DA7" Ref="#PWR?"  Part="1" 
+AR Path="/61BE2A8A/61A7ECF3/61A83DA7" Ref="#PWR047"  Part="1" 
+F 0 "#PWR047" H 7050 4400 50  0001 C CNN
+F 1 "GND" H 7055 4477 50  0000 C CNN
+F 2 "" H 7050 4650 50  0001 C CNN
+F 3 "" H 7050 4650 50  0001 C CNN
+	1    7050 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61A83DAD
+P 5800 4350
+AR Path="/61BE2A8A/61A83DAD" Ref="#PWR?"  Part="1" 
+AR Path="/61BE2A8A/61D2FA96/61A83DAD" Ref="#PWR?"  Part="1" 
+AR Path="/61BE2A8A/61D663B4/61A83DAD" Ref="#PWR?"  Part="1" 
+AR Path="/61BE2A8A/61D84977/61A83DAD" Ref="#PWR?"  Part="1" 
+AR Path="/61BE2A8A/61A7ECF3/61A83DAD" Ref="#PWR045"  Part="1" 
+F 0 "#PWR045" H 5800 4100 50  0001 C CNN
+F 1 "GND" H 5805 4177 50  0000 C CNN
+F 2 "" H 5800 4350 50  0001 C CNN
+F 3 "" H 5800 4350 50  0001 C CNN
+	1    5800 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 4300 5800 4350
+Wire Wire Line
+	7050 4600 7050 4650
+Text HLabel 4750 4000 0    50   Input ~ 0
+OE_N
+Text HLabel 6550 4400 0    50   Input ~ 0
+SEL0
+Text HLabel 5300 4100 0    50   Input ~ 0
+SEL1
+Text HLabel 5250 3700 0    50   Input ~ 0
+TARGET_D+
+Text HLabel 5250 3800 0    50   Input ~ 0
+TARGET_D-
+Text HLabel 7550 4300 2    50   Input ~ 0
+DEV1_D+
+Text HLabel 7550 4400 2    50   Input ~ 0
+DEV1_D-
+Wire Wire Line
+	6650 4000 6200 4000
+Wire Wire Line
+	6200 4100 6650 4100
+Text HLabel 7550 4000 2    50   Input ~ 0
+DEV2_D+
+Text HLabel 7550 4100 2    50   Input ~ 0
+DEV2_D-
+Text HLabel 6300 3700 2    50   Input ~ 0
+DEV3_D+
+Text HLabel 6300 3800 2    50   Input ~ 0
+DEV3_D-
+Wire Wire Line
+	5400 4000 4900 4000
+Wire Wire Line
+	6650 4300 6250 4300
+Wire Wire Line
+	6250 4300 6250 4600
+Wire Wire Line
+	6250 4600 4900 4600
+Wire Wire Line
+	4900 4600 4900 4000
+Connection ~ 4900 4000
+Wire Wire Line
+	4900 4000 4750 4000
+Wire Wire Line
+	6200 3700 6300 3700
+Wire Wire Line
+	6300 3800 6200 3800
+Wire Wire Line
+	5400 3800 5250 3800
+Wire Wire Line
+	5250 3700 5400 3700
+Wire Wire Line
+	6550 4400 6650 4400
+Wire Wire Line
+	7450 4300 7550 4300
+Wire Wire Line
+	7550 4400 7450 4400
+Wire Wire Line
+	7450 4000 7550 4000
+Wire Wire Line
+	7550 4100 7450 4100
+Wire Wire Line
+	5400 4100 5300 4100
+$Comp
+L power:+3.3V #PWR?
+U 1 1 61C15FDE
+P 5800 3450
+AR Path="/61BE2A8A/61D663B4/61C15FDE" Ref="#PWR?"  Part="1" 
+AR Path="/61BE2A8A/61A7ECF3/61C15FDE" Ref="#PWR0110"  Part="1" 
+F 0 "#PWR0110" H 5800 3300 50  0001 C CNN
+F 1 "+3.3V" H 5815 3623 50  0000 C CNN
+F 2 "" H 5800 3450 50  0001 C CNN
+F 3 "" H 5800 3450 50  0001 C CNN
+	1    5800 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 61C16742
+P 7050 3750
+AR Path="/61BE2A8A/61D663B4/61C16742" Ref="#PWR?"  Part="1" 
+AR Path="/61BE2A8A/61A7ECF3/61C16742" Ref="#PWR0111"  Part="1" 
+F 0 "#PWR0111" H 7050 3600 50  0001 C CNN
+F 1 "+3.3V" H 7065 3923 50  0000 C CNN
+F 2 "" H 7050 3750 50  0001 C CNN
+F 3 "" H 7050 3750 50  0001 C CNN
+	1    7050 3750
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

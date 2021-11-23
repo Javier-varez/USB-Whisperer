@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 9
+Sheet 10 12
 Title "USB Whisperer"
 Date "2021-11-21"
 Rev "A"
@@ -14,24 +14,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_ST_STM32F0:STM32F070CBTx U?
-U 1 1 61A8BF1D
-P 5650 3250
-AR Path="/61A8BF1D" Ref="U?"  Part="1" 
-AR Path="/619A9DB6/61A8BF1D" Ref="U?"  Part="1" 
-AR Path="/61A89F2B/61A8BF1D" Ref="U6"  Part="1" 
-F 0 "U6" H 5600 1661 50  0000 C CNN
-F 1 "STM32F070CBTx" H 5600 1570 50  0000 C CNN
-F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 5050 1850 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00141386.pdf" H 5650 3250 50  0001 C CNN
-	1    5650 3250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR019
+L power:GND #PWR057
 U 1 1 61A8C2EE
 P 5450 5000
-F 0 "#PWR019" H 5450 4750 50  0001 C CNN
+F 0 "#PWR057" H 5450 4750 50  0001 C CNN
 F 1 "GND" H 5455 4827 50  0000 C CNN
 F 2 "" H 5450 5000 50  0001 C CNN
 F 3 "" H 5450 5000 50  0001 C CNN
@@ -58,10 +44,10 @@ Wire Wire Line
 	5750 4850 5650 4850
 Connection ~ 5650 4850
 $Comp
-L power:+3.3V #PWR018
+L power:+3.3V #PWR056
 U 1 1 61A8DDC6
 P 5450 1600
-F 0 "#PWR018" H 5450 1450 50  0001 C CNN
+F 0 "#PWR056" H 5450 1450 50  0001 C CNN
 F 1 "+3.3V" H 5465 1773 50  0000 C CNN
 F 2 "" H 5450 1600 50  0001 C CNN
 F 3 "" H 5450 1600 50  0001 C CNN
@@ -93,37 +79,37 @@ Wire Wire Line
 	5850 1700 5850 1750
 Connection ~ 5750 1700
 $Comp
-L Connector:Conn_ARM_JTAG_SWD_10 J3
+L Connector:Conn_ARM_JTAG_SWD_10 J4
 U 1 1 61A92B40
-P 9100 1900
-F 0 "J3" H 8657 1946 50  0000 R CNN
-F 1 "Conn_ARM_JTAG_SWD_10" H 8657 1855 50  0000 R CNN
-F 2 "" H 9100 1900 50  0001 C CNN
-F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf" V 8750 650 50  0001 C CNN
-	1    9100 1900
+P 8350 1700
+F 0 "J4" H 7907 1746 50  0000 R CNN
+F 1 "Conn_ARM_JTAG_SWD_10" H 7907 1655 50  0000 R CNN
+F 2 "" H 8350 1700 50  0001 C CNN
+F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf" V 8000 450 50  0001 C CNN
+	1    8350 1700
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR021
+L power:+3.3V #PWR059
 U 1 1 61A94DD6
-P 9100 1200
-F 0 "#PWR021" H 9100 1050 50  0001 C CNN
-F 1 "+3.3V" H 9115 1373 50  0000 C CNN
-F 2 "" H 9100 1200 50  0001 C CNN
-F 3 "" H 9100 1200 50  0001 C CNN
-	1    9100 1200
+P 8350 1000
+F 0 "#PWR059" H 8350 850 50  0001 C CNN
+F 1 "+3.3V" H 8365 1173 50  0000 C CNN
+F 2 "" H 8350 1000 50  0001 C CNN
+F 3 "" H 8350 1000 50  0001 C CNN
+	1    8350 1000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9100 1200 9100 1300
+	8350 1000 8350 1100
 Text Label 4700 1950 0    50   ~ 0
 NRST
 Wire Wire Line
 	4700 1950 4950 1950
-Text Label 9750 1600 0    50   ~ 0
+Text Label 9000 1400 0    50   ~ 0
 NRST
 Wire Wire Line
-	9600 1600 9750 1600
+	8850 1400 9000 1400
 $Comp
 L Device:Crystal Y1
 U 1 1 61A96F89
@@ -158,10 +144,10 @@ F 3 "~" H 1950 2150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR011
+L power:GND #PWR049
 U 1 1 61A98BCF
 P 1950 2450
-F 0 "#PWR011" H 1950 2200 50  0001 C CNN
+F 0 "#PWR049" H 1950 2200 50  0001 C CNN
 F 1 "GND" H 1955 2277 50  0000 C CNN
 F 2 "" H 1950 2450 50  0001 C CNN
 F 3 "" H 1950 2450 50  0001 C CNN
@@ -169,10 +155,10 @@ F 3 "" H 1950 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR014
+L power:GND #PWR052
 U 1 1 61A98E40
 P 2650 2450
-F 0 "#PWR014" H 2650 2200 50  0001 C CNN
+F 0 "#PWR052" H 2650 2200 50  0001 C CNN
 F 1 "GND" H 2655 2277 50  0000 C CNN
 F 2 "" H 2650 2450 50  0001 C CNN
 F 3 "" H 2650 2450 50  0001 C CNN
@@ -226,10 +212,10 @@ F 3 "~" H 2650 4250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R10
+L Device:R R18
 U 1 1 61A9DD7F
 P 2650 3750
-F 0 "R10" H 2720 3796 50  0000 L CNN
+F 0 "R18" H 2720 3796 50  0000 L CNN
 F 1 "100k" H 2720 3705 50  0000 L CNN
 F 2 "" V 2580 3750 50  0001 C CNN
 F 3 "~" H 2650 3750 50  0001 C CNN
@@ -237,10 +223,10 @@ F 3 "~" H 2650 3750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR016
+L power:GND #PWR054
 U 1 1 61A9E3AF
 P 2650 4550
-F 0 "#PWR016" H 2650 4300 50  0001 C CNN
+F 0 "#PWR054" H 2650 4300 50  0001 C CNN
 F 1 "GND" H 2655 4377 50  0000 C CNN
 F 2 "" H 2650 4550 50  0001 C CNN
 F 3 "" H 2650 4550 50  0001 C CNN
@@ -248,10 +234,10 @@ F 3 "" H 2650 4550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR010
+L power:GND #PWR048
 U 1 1 61A9EAE0
 P 1850 4550
-F 0 "#PWR010" H 1850 4300 50  0001 C CNN
+F 0 "#PWR048" H 1850 4300 50  0001 C CNN
 F 1 "GND" H 1855 4377 50  0000 C CNN
 F 2 "" H 1850 4550 50  0001 C CNN
 F 3 "" H 1850 4550 50  0001 C CNN
@@ -284,10 +270,10 @@ Wire Wire Line
 	2650 3900 2650 4000
 Connection ~ 2650 4000
 $Comp
-L power:+3.3V #PWR015
+L power:+3.3V #PWR053
 U 1 1 61AA480C
 P 2650 3500
-F 0 "#PWR015" H 2650 3350 50  0001 C CNN
+F 0 "#PWR053" H 2650 3350 50  0001 C CNN
 F 1 "+3.3V" H 2665 3673 50  0000 C CNN
 F 2 "" H 2650 3500 50  0001 C CNN
 F 3 "" H 2650 3500 50  0001 C CNN
@@ -299,10 +285,10 @@ Wire Wire Line
 Wire Wire Line
 	2650 4400 2650 4550
 $Comp
-L Device:R R9
+L Device:R R17
 U 1 1 61AA6967
 P 2300 6400
-F 0 "R9" H 2370 6446 50  0000 L CNN
+F 0 "R17" H 2370 6446 50  0000 L CNN
 F 1 "R" H 2370 6355 50  0000 L CNN
 F 2 "" V 2230 6400 50  0001 C CNN
 F 3 "~" H 2300 6400 50  0001 C CNN
@@ -321,10 +307,10 @@ F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:+3.3V #PWR012
+L power:+3.3V #PWR050
 U 1 1 61AA797B
 P 2300 5550
-F 0 "#PWR012" H 2300 5400 50  0001 C CNN
+F 0 "#PWR050" H 2300 5400 50  0001 C CNN
 F 1 "+3.3V" H 2315 5723 50  0000 C CNN
 F 2 "" H 2300 5550 50  0001 C CNN
 F 3 "" H 2300 5550 50  0001 C CNN
@@ -350,10 +336,10 @@ Connection ~ 2300 6150
 Wire Wire Line
 	2300 6150 2300 6200
 $Comp
-L power:GND #PWR013
+L power:GND #PWR051
 U 1 1 61AACEC0
 P 2300 6600
-F 0 "#PWR013" H 2300 6350 50  0001 C CNN
+F 0 "#PWR051" H 2300 6350 50  0001 C CNN
 F 1 "GND" H 2305 6427 50  0000 C CNN
 F 2 "" H 2300 6600 50  0001 C CNN
 F 3 "" H 2300 6600 50  0001 C CNN
@@ -381,40 +367,40 @@ Wire Wire Line
 	6400 4350 6250 4350
 Wire Wire Line
 	6250 4450 6400 4450
-Text Label 9750 1800 0    50   ~ 0
+Text Label 9000 1600 0    50   ~ 0
 SWCLK
-Text Label 9750 1900 0    50   ~ 0
+Text Label 9000 1700 0    50   ~ 0
 SWDIO
 Wire Wire Line
-	9750 1800 9600 1800
+	9000 1600 8850 1600
 Wire Wire Line
-	9600 1900 9750 1900
-NoConn ~ 9750 2000
+	8850 1700 9000 1700
+NoConn ~ 9000 1800
 Wire Wire Line
-	9750 2000 9600 2000
-NoConn ~ 9750 2100
+	9000 1800 8850 1800
+NoConn ~ 9000 1900
 Wire Wire Line
-	9750 2100 9600 2100
+	9000 1900 8850 1900
 $Comp
-L power:GND #PWR022
+L power:GND #PWR060
 U 1 1 61ABFA87
-P 9100 2600
-F 0 "#PWR022" H 9100 2350 50  0001 C CNN
-F 1 "GND" H 9105 2427 50  0000 C CNN
-F 2 "" H 9100 2600 50  0001 C CNN
-F 3 "" H 9100 2600 50  0001 C CNN
-	1    9100 2600
+P 8350 2400
+F 0 "#PWR060" H 8350 2150 50  0001 C CNN
+F 1 "GND" H 8355 2227 50  0000 C CNN
+F 2 "" H 8350 2400 50  0001 C CNN
+F 3 "" H 8350 2400 50  0001 C CNN
+	1    8350 2400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9100 2500 9100 2550
+	8350 2300 8350 2350
 Wire Wire Line
-	9100 2550 9000 2550
+	8350 2350 8250 2350
 Wire Wire Line
-	9000 2550 9000 2500
-Connection ~ 9100 2550
+	8250 2350 8250 2300
+Connection ~ 8350 2350
 Wire Wire Line
-	9100 2550 9100 2600
+	8350 2350 8350 2400
 Text Label 6400 3250 0    50   ~ 0
 UART2_TX
 Text Label 6400 3350 0    50   ~ 0
@@ -461,95 +447,95 @@ Text Label 4250 3850 0    50   ~ 0
 I2C1_SCL
 Text Label 4250 3950 0    50   ~ 0
 I2C1_SDA
-Text HLabel 10050 3400 2    50   Output ~ 0
+Text HLabel 10150 1850 2    50   Output ~ 0
 UART1_TX
-Text HLabel 10050 3500 2    50   Input ~ 0
+Text HLabel 10150 1950 2    50   Input ~ 0
 UART1_RX
-Text HLabel 10050 3650 2    50   Output ~ 0
+Text HLabel 10150 2100 2    50   Output ~ 0
 UART2_TX
-Text HLabel 10050 3750 2    50   Input ~ 0
+Text HLabel 10150 2200 2    50   Input ~ 0
 UART2_RX
-Text HLabel 10050 3900 2    50   Output ~ 0
+Text HLabel 10150 2350 2    50   Output ~ 0
 UART3_TX
-Text HLabel 10050 4000 2    50   Input ~ 0
+Text HLabel 10150 2450 2    50   Input ~ 0
 UART3_RX
-Text HLabel 10050 4150 2    50   Output ~ 0
+Text HLabel 10150 2600 2    50   Output ~ 0
 UART4_TX
-Text HLabel 10050 4250 2    50   Input ~ 0
+Text HLabel 10150 2700 2    50   Input ~ 0
 UART4_RX
-Text HLabel 10050 4400 2    50   BiDi ~ 0
+Text HLabel 10150 2850 2    50   BiDi ~ 0
 USB_D+
-Text HLabel 10050 4500 2    50   BiDi ~ 0
+Text HLabel 10150 2950 2    50   BiDi ~ 0
 USB_D-
-Text HLabel 10050 4650 2    50   BiDi ~ 0
+Text HLabel 10150 3100 2    50   BiDi ~ 0
 I2C1_SCL
-Text HLabel 10050 4750 2    50   BiDi ~ 0
+Text HLabel 10150 3200 2    50   BiDi ~ 0
 I2C1_SDA
-Text HLabel 10050 4900 2    50   BiDi ~ 0
+Text HLabel 10150 3350 2    50   BiDi ~ 0
 I2C2_SCL
-Text HLabel 10050 5000 2    50   BiDi ~ 0
+Text HLabel 10150 3450 2    50   BiDi ~ 0
 I2C2_SDA
-Text Label 9550 3400 0    50   ~ 0
+Text Label 9650 1850 0    50   ~ 0
 UART1_TX
-Text Label 9550 3500 0    50   ~ 0
+Text Label 9650 1950 0    50   ~ 0
 UART1_RX
-Text Label 9550 3650 0    50   ~ 0
+Text Label 9650 2100 0    50   ~ 0
 UART2_TX
-Text Label 9550 3750 0    50   ~ 0
+Text Label 9650 2200 0    50   ~ 0
 UART2_RX
-Text Label 9550 3900 0    50   ~ 0
+Text Label 9650 2350 0    50   ~ 0
 UART3_TX
-Text Label 9550 4000 0    50   ~ 0
+Text Label 9650 2450 0    50   ~ 0
 UART3_RX
-Text Label 9550 4150 0    50   ~ 0
+Text Label 9650 2600 0    50   ~ 0
 UART4_TX
-Text Label 9550 4250 0    50   ~ 0
+Text Label 9650 2700 0    50   ~ 0
 UART4_RX
-Text Label 9550 4400 0    50   ~ 0
+Text Label 9650 2850 0    50   ~ 0
 USB_D+
-Text Label 9550 4500 0    50   ~ 0
+Text Label 9650 2950 0    50   ~ 0
 USB_D-
-Text Label 9550 4650 0    50   ~ 0
+Text Label 9650 3100 0    50   ~ 0
 I2C1_SCL
-Text Label 9550 4750 0    50   ~ 0
+Text Label 9650 3200 0    50   ~ 0
 I2C1_SDA
-Text Label 9550 4900 0    50   ~ 0
+Text Label 9650 3350 0    50   ~ 0
 I2C2_SCL
-Text Label 9550 5000 0    50   ~ 0
+Text Label 9650 3450 0    50   ~ 0
 I2C2_SDA
 Wire Wire Line
-	10050 3400 9550 3400
+	10150 1850 9650 1850
 Wire Wire Line
-	9550 3500 10050 3500
+	9650 1950 10150 1950
 Wire Wire Line
-	10050 3650 9550 3650
+	10150 2100 9650 2100
 Wire Wire Line
-	10050 3750 9550 3750
+	10150 2200 9650 2200
 Wire Wire Line
-	9550 4150 10050 4150
+	9650 2600 10150 2600
 Wire Wire Line
-	10050 4250 9550 4250
+	10150 2700 9650 2700
 Wire Wire Line
-	10050 4400 9550 4400
+	10150 2850 9650 2850
 Wire Wire Line
-	10050 4500 9550 4500
+	10150 2950 9650 2950
 Wire Wire Line
-	9550 4650 10050 4650
+	9650 3100 10150 3100
 Wire Wire Line
-	10050 4750 9550 4750
+	10150 3200 9650 3200
 Wire Wire Line
-	9550 4900 10050 4900
+	9650 3350 10150 3350
 Wire Wire Line
-	10050 5000 9550 5000
+	10150 3450 9650 3450
 Wire Wire Line
 	4250 3850 4950 3850
 Wire Wire Line
 	4950 3950 4250 3950
 $Comp
-L Device:R R11
+L Device:R R19
 U 1 1 61BBEE47
 P 4800 6300
-F 0 "R11" H 4870 6346 50  0000 L CNN
+F 0 "R19" H 4870 6346 50  0000 L CNN
 F 1 "4k7" H 4870 6255 50  0000 L CNN
 F 2 "" V 4730 6300 50  0001 C CNN
 F 3 "~" H 4800 6300 50  0001 C CNN
@@ -557,10 +543,10 @@ F 3 "~" H 4800 6300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R12
+L Device:R R20
 U 1 1 61BBF1D9
 P 5050 6300
-F 0 "R12" H 5120 6346 50  0000 L CNN
+F 0 "R20" H 5120 6346 50  0000 L CNN
 F 1 "4k7" H 5120 6255 50  0000 L CNN
 F 2 "" V 4980 6300 50  0001 C CNN
 F 3 "~" H 5050 6300 50  0001 C CNN
@@ -586,10 +572,10 @@ Wire Wire Line
 Wire Wire Line
 	5050 6050 5050 6150
 $Comp
-L power:+3.3V #PWR017
+L power:+3.3V #PWR055
 U 1 1 61BCF446
 P 4800 6050
-F 0 "#PWR017" H 4800 5900 50  0001 C CNN
+F 0 "#PWR055" H 4800 5900 50  0001 C CNN
 F 1 "+3.3V" H 4815 6223 50  0000 C CNN
 F 2 "" H 4800 6050 50  0001 C CNN
 F 3 "" H 4800 6050 50  0001 C CNN
@@ -598,10 +584,10 @@ F 3 "" H 4800 6050 50  0001 C CNN
 $EndComp
 Connection ~ 4800 6050
 $Comp
-L Device:R R13
+L Device:R R21
 U 1 1 61BD09EA
 P 5800 6300
-F 0 "R13" H 5870 6391 50  0000 L CNN
+F 0 "R21" H 5870 6391 50  0000 L CNN
 F 1 "4k7" H 5870 6300 50  0000 L CNN
 F 2 "" V 5730 6300 50  0001 C CNN
 F 3 "~" H 5800 6300 50  0001 C CNN
@@ -610,10 +596,10 @@ F 4 "N.F." H 5870 6209 50  0000 L CNN "Fitted"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R14
+L Device:R R22
 U 1 1 61BD09F0
 P 6050 6300
-F 0 "R14" H 6120 6391 50  0000 L CNN
+F 0 "R22" H 6120 6391 50  0000 L CNN
 F 1 "4k7" H 6120 6300 50  0000 L CNN
 F 2 "" V 5980 6300 50  0001 C CNN
 F 3 "~" H 6050 6300 50  0001 C CNN
@@ -640,10 +626,10 @@ Wire Wire Line
 Wire Wire Line
 	6050 6050 6050 6150
 $Comp
-L power:+3.3V #PWR020
+L power:+3.3V #PWR058
 U 1 1 61BD09FF
 P 5800 6050
-F 0 "#PWR020" H 5800 5900 50  0001 C CNN
+F 0 "#PWR058" H 5800 5900 50  0001 C CNN
 F 1 "+3.3V" H 5815 6223 50  0000 C CNN
 F 2 "" H 5800 6050 50  0001 C CNN
 F 3 "" H 5800 6050 50  0001 C CNN
@@ -655,12 +641,12 @@ Text Label 6400 3450 0    50   ~ 0
 USB_EV_N
 Wire Wire Line
 	6400 3450 6250 3450
-Text HLabel 10050 5150 2    50   Input ~ 0
+Text HLabel 10150 3600 2    50   Input ~ 0
 USB_EV_N
-Text Label 9550 5150 0    50   ~ 0
+Text Label 9650 3600 0    50   ~ 0
 USB_EV_N
 Wire Wire Line
-	9550 5150 10050 5150
+	9650 3600 10150 3600
 Text Label 4250 3050 0    50   ~ 0
 BUS_1_MUX_SEL_0
 Text Label 4250 3150 0    50   ~ 0
@@ -669,17 +655,17 @@ Wire Wire Line
 	4250 3050 4950 3050
 Wire Wire Line
 	4950 3150 4250 3150
-Text HLabel 10050 5300 2    50   Output ~ 0
+Text HLabel 10150 3750 2    50   Output ~ 0
 BUS_1_MUX_SEL_0
-Text Label 9300 5300 0    50   ~ 0
+Text Label 9400 3750 0    50   ~ 0
 BUS_1_MUX_SEL_0
-Text HLabel 10000 5750 2    50   Output ~ 0
+Text HLabel 10100 4200 2    50   Output ~ 0
 BUS_2_MUX_SEL_0
-Text Label 9250 5750 0    50   ~ 0
+Text Label 9350 4200 0    50   ~ 0
 BUS_2_MUX_SEL_0
-Text HLabel 10000 6100 2    50   Output ~ 0
+Text HLabel 10100 4550 2    50   Output ~ 0
 BUS_3_MUX_SEL_0
-Text Label 9250 6100 0    50   ~ 0
+Text Label 9350 4550 0    50   ~ 0
 BUS_3_MUX_SEL_0
 Text Label 4250 3250 0    50   ~ 0
 BUS_2_MUX_SEL_0
@@ -697,79 +683,120 @@ Wire Wire Line
 	4250 3450 4950 3450
 Wire Wire Line
 	4950 3550 4250 3550
-Text Label 4250 2650 0    50   ~ 0
+Text HLabel 10150 3950 2    50   Output ~ 0
 BUS_1_OE_N
-Text Label 4250 2750 0    50   ~ 0
-BUS_2_OE_N
-Wire Wire Line
-	4250 2650 4950 2650
-Wire Wire Line
-	4950 2750 4250 2750
-Text Label 4250 2850 0    50   ~ 0
-BUS_3_OE_N
-Wire Wire Line
-	4250 2850 4950 2850
-Text HLabel 10050 5500 2    50   Output ~ 0
-BUS_1_OE_N
-Text Label 9550 5500 0    50   ~ 0
+Text Label 9650 3950 0    50   ~ 0
 BUS_1_OE_N
 Wire Wire Line
-	9550 5500 10050 5500
-Text HLabel 10000 5950 2    50   Output ~ 0
+	9650 3950 10150 3950
+Text HLabel 10100 4400 2    50   Output ~ 0
 BUS_2_OE_N
-Text Label 9500 5950 0    50   ~ 0
+Text Label 9600 4400 0    50   ~ 0
 BUS_2_OE_N
 Wire Wire Line
-	9500 5950 10000 5950
-Text HLabel 10000 6300 2    50   Output ~ 0
+	9600 4400 10100 4400
+Text HLabel 10100 4750 2    50   Output ~ 0
 BUS_3_OE_N
-Text Label 9500 6300 0    50   ~ 0
+Text Label 9600 4750 0    50   ~ 0
 BUS_3_OE_N
 Wire Wire Line
-	9500 6300 10000 6300
+	9600 4750 10100 4750
 Wire Wire Line
 	6400 3250 6250 3250
-NoConn ~ 6250 3550
-NoConn ~ 6250 3650
-NoConn ~ 6250 3750
-NoConn ~ 6250 3850
 NoConn ~ 6250 4550
 NoConn ~ 4950 4250
 NoConn ~ 4950 4550
 Wire Wire Line
-	10050 3900 9550 3900
+	10150 2350 9650 2350
 Wire Wire Line
-	9550 4000 10050 4000
+	9650 2450 10150 2450
 Wire Wire Line
 	4950 4050 4250 4050
 Wire Wire Line
 	4250 4150 4950 4150
-NoConn ~ 4950 3650
-NoConn ~ 4950 3750
 Wire Wire Line
-	9300 5300 10050 5300
+	9400 3750 10150 3750
 Wire Wire Line
-	10000 5750 9250 5750
+	10100 4200 9350 4200
 Wire Wire Line
-	9250 6100 10000 6100
-Text HLabel 10050 5400 2    50   Output ~ 0
+	9350 4550 10100 4550
+Text HLabel 10150 3850 2    50   Output ~ 0
 BUS_1_MUX_SEL_1
-Text Label 9300 5400 0    50   ~ 0
+Text Label 9400 3850 0    50   ~ 0
 BUS_1_MUX_SEL_1
 Wire Wire Line
-	9300 5400 10050 5400
-Text HLabel 10000 5850 2    50   Output ~ 0
+	9400 3850 10150 3850
+Text HLabel 10100 4300 2    50   Output ~ 0
 BUS_2_MUX_SEL_1
-Text Label 9250 5850 0    50   ~ 0
+Text Label 9350 4300 0    50   ~ 0
 BUS_2_MUX_SEL_1
 Wire Wire Line
-	10000 5850 9250 5850
-Text HLabel 10000 6200 2    50   Output ~ 0
+	10100 4300 9350 4300
+Text HLabel 10100 4650 2    50   Output ~ 0
 BUS_3_MUX_SEL_1
-Text Label 9250 6200 0    50   ~ 0
+Text Label 9350 4650 0    50   ~ 0
 BUS_3_MUX_SEL_1
 Wire Wire Line
-	9250 6200 10000 6200
+	9350 4650 10100 4650
 Text Notes 750  850  0    50   ~ 10
 TODO: Add defaults to SEL and OE pins
+Text HLabel 10100 4900 2    50   Output ~ 0
+USB_MUX_SEL_0
+Text HLabel 10100 5000 2    50   Output ~ 0
+USB_MUX_SEL_1
+Text HLabel 10100 5100 2    50   Output ~ 0
+USB_OE_N
+Text Label 9350 4900 0    50   ~ 0
+USB_MUX_SEL_0
+Text Label 9600 5100 0    50   ~ 0
+USB_OE_N
+Wire Wire Line
+	9600 5100 10100 5100
+Wire Wire Line
+	9350 4900 10100 4900
+Text Label 9350 5000 0    50   ~ 0
+USB_MUX_SEL_1
+Wire Wire Line
+	9350 5000 10100 5000
+$Comp
+L MCU_ST_STM32F0:STM32F070CBTx U?
+U 1 1 61A8BF1D
+P 5650 3250
+AR Path="/61A8BF1D" Ref="U?"  Part="1" 
+AR Path="/619A9DB6/61A8BF1D" Ref="U?"  Part="1" 
+AR Path="/61A89F2B/61A8BF1D" Ref="U21"  Part="1" 
+F 0 "U21" H 5600 1661 50  0000 C CNN
+F 1 "STM32F070CBTx" H 5600 1570 50  0000 C CNN
+F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 5050 1850 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00141386.pdf" H 5650 3250 50  0001 C CNN
+	1    5650 3250
+	1    0    0    -1  
+$EndComp
+Text Label 4250 3650 0    50   ~ 0
+USB_MUX_SEL_0
+Text Label 4250 3750 0    50   ~ 0
+USB_MUX_SEL_1
+Wire Wire Line
+	4250 3650 4950 3650
+Wire Wire Line
+	4950 3750 4250 3750
+Text Label 6400 3550 0    50   ~ 0
+BUS_1_OE_N
+Text Label 6400 3650 0    50   ~ 0
+BUS_2_OE_N
+Text Label 6400 3750 0    50   ~ 0
+BUS_3_OE_N
+Text Label 6400 3850 0    50   ~ 0
+USB_OE_N
+Wire Wire Line
+	6400 3550 6250 3550
+Wire Wire Line
+	6250 3650 6400 3650
+Wire Wire Line
+	6400 3750 6250 3750
+Wire Wire Line
+	6250 3850 6400 3850
+NoConn ~ 4950 2650
+NoConn ~ 4950 2750
+NoConn ~ 4950 2850
 $EndSCHEMATC

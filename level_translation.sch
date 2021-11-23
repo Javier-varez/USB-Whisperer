@@ -1,0 +1,284 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 8 12
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Logic_LevelTranslator:TXB0104PW U?
+U 1 1 619F4E53
+P 4550 4000
+AR Path="/61BE2A8A/619F4E53" Ref="U?"  Part="1" 
+AR Path="/61BE2A8A/619F3501/619F4E53" Ref="U17"  Part="1" 
+F 0 "U17" H 4550 3211 50  0000 C CNN
+F 1 "TXB0104PW" H 4550 3120 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 4550 3250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/txb0104.pdf" H 4660 4095 50  0001 C CNN
+	1    4550 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+1V2 #PWR?
+U 1 1 619F4E59
+P 4400 3200
+AR Path="/61BE2A8A/619F4E59" Ref="#PWR?"  Part="1" 
+AR Path="/61BE2A8A/619F3501/619F4E59" Ref="#PWR037"  Part="1" 
+F 0 "#PWR037" H 4400 3050 50  0001 C CNN
+F 1 "+1V2" H 4415 3373 50  0000 C CNN
+F 2 "" H 4400 3200 50  0001 C CNN
+F 3 "" H 4400 3200 50  0001 C CNN
+	1    4400 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 619F4E5F
+P 4700 3200
+AR Path="/61BE2A8A/619F4E5F" Ref="#PWR?"  Part="1" 
+AR Path="/61BE2A8A/619F3501/619F4E5F" Ref="#PWR039"  Part="1" 
+F 0 "#PWR039" H 4700 3050 50  0001 C CNN
+F 1 "+3.3V" H 4715 3373 50  0000 C CNN
+F 2 "" H 4700 3200 50  0001 C CNN
+F 3 "" H 4700 3200 50  0001 C CNN
+	1    4700 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 3300 4650 3200
+Wire Wire Line
+	4650 3200 4700 3200
+Wire Wire Line
+	4400 3200 4450 3200
+Wire Wire Line
+	4450 3200 4450 3300
+$Comp
+L power:GND #PWR?
+U 1 1 619F4E69
+P 4550 4950
+AR Path="/61BE2A8A/619F4E69" Ref="#PWR?"  Part="1" 
+AR Path="/61BE2A8A/619F3501/619F4E69" Ref="#PWR038"  Part="1" 
+F 0 "#PWR038" H 4550 4700 50  0001 C CNN
+F 1 "GND" H 4555 4777 50  0000 C CNN
+F 2 "" H 4550 4950 50  0001 C CNN
+F 3 "" H 4550 4950 50  0001 C CNN
+	1    4550 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 4700 4550 4950
+$Comp
+L Device:R R?
+U 1 1 619F4E70
+P 2750 3900
+AR Path="/61BE2A8A/619F4E70" Ref="R?"  Part="1" 
+AR Path="/61BE2A8A/619F3501/619F4E70" Ref="R15"  Part="1" 
+F 0 "R15" H 2820 3946 50  0000 L CNN
+F 1 "10k" H 2820 3855 50  0000 L CNN
+F 2 "" V 2680 3900 50  0001 C CNN
+F 3 "~" H 2750 3900 50  0001 C CNN
+	1    2750 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+1V2 #PWR?
+U 1 1 619F4E76
+P 2750 3700
+AR Path="/61BE2A8A/619F4E76" Ref="#PWR?"  Part="1" 
+AR Path="/61BE2A8A/619F3501/619F4E76" Ref="#PWR035"  Part="1" 
+F 0 "#PWR035" H 2750 3550 50  0001 C CNN
+F 1 "+1V2" H 2765 3873 50  0000 C CNN
+F 2 "" H 2750 3700 50  0001 C CNN
+F 3 "" H 2750 3700 50  0001 C CNN
+	1    2750 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 619F4E7D
+P 2750 4300
+AR Path="/61BE2A8A/619F4E7D" Ref="R?"  Part="1" 
+AR Path="/61BE2A8A/619F3501/619F4E7D" Ref="R16"  Part="1" 
+F 0 "R16" H 2820 4391 50  0000 L CNN
+F 1 "10k" H 2820 4300 50  0000 L CNN
+F 2 "" V 2680 4300 50  0001 C CNN
+F 3 "~" H 2750 4300 50  0001 C CNN
+F 4 "N.F." H 2820 4209 50  0000 L CNN "Fitted"
+	1    2750 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 619F4E83
+P 2750 4500
+AR Path="/61BE2A8A/619F4E83" Ref="#PWR?"  Part="1" 
+AR Path="/61BE2A8A/619F3501/619F4E83" Ref="#PWR036"  Part="1" 
+F 0 "#PWR036" H 2750 4250 50  0001 C CNN
+F 1 "GND" H 2755 4327 50  0000 C CNN
+F 2 "" H 2750 4500 50  0001 C CNN
+F 3 "" H 2750 4500 50  0001 C CNN
+	1    2750 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 3700 2750 3750
+Wire Wire Line
+	2750 4050 2750 4100
+Wire Wire Line
+	2750 4450 2750 4500
+Text Label 4000 3500 0    50   ~ 0
+OE
+Wire Wire Line
+	4150 3500 4000 3500
+Wire Wire Line
+	2750 4100 2900 4100
+Connection ~ 2750 4100
+Wire Wire Line
+	2750 4100 2750 4150
+Text Label 2900 4100 0    50   ~ 0
+OE
+$Comp
+L Logic_LevelTranslator:TXB0104PW U?
+U 1 1 619FBBCA
+P 7050 4050
+AR Path="/61BE2A8A/619FBBCA" Ref="U?"  Part="1" 
+AR Path="/61BE2A8A/619F3501/619FBBCA" Ref="U18"  Part="1" 
+F 0 "U18" H 7050 3261 50  0000 C CNN
+F 1 "TXB0104PW" H 7050 3170 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 7050 3300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/txb0104.pdf" H 7160 4145 50  0001 C CNN
+	1    7050 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+1V2 #PWR?
+U 1 1 619FBBD0
+P 6900 3250
+AR Path="/61BE2A8A/619FBBD0" Ref="#PWR?"  Part="1" 
+AR Path="/61BE2A8A/619F3501/619FBBD0" Ref="#PWR040"  Part="1" 
+F 0 "#PWR040" H 6900 3100 50  0001 C CNN
+F 1 "+1V2" H 6915 3423 50  0000 C CNN
+F 2 "" H 6900 3250 50  0001 C CNN
+F 3 "" H 6900 3250 50  0001 C CNN
+	1    6900 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 619FBBD6
+P 7200 3250
+AR Path="/61BE2A8A/619FBBD6" Ref="#PWR?"  Part="1" 
+AR Path="/61BE2A8A/619F3501/619FBBD6" Ref="#PWR042"  Part="1" 
+F 0 "#PWR042" H 7200 3100 50  0001 C CNN
+F 1 "+3.3V" H 7215 3423 50  0000 C CNN
+F 2 "" H 7200 3250 50  0001 C CNN
+F 3 "" H 7200 3250 50  0001 C CNN
+	1    7200 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 3350 7150 3250
+Wire Wire Line
+	7150 3250 7200 3250
+Wire Wire Line
+	6900 3250 6950 3250
+Wire Wire Line
+	6950 3250 6950 3350
+$Comp
+L power:GND #PWR?
+U 1 1 619FBBE0
+P 7050 5000
+AR Path="/61BE2A8A/619FBBE0" Ref="#PWR?"  Part="1" 
+AR Path="/61BE2A8A/619F3501/619FBBE0" Ref="#PWR041"  Part="1" 
+F 0 "#PWR041" H 7050 4750 50  0001 C CNN
+F 1 "GND" H 7055 4827 50  0000 C CNN
+F 2 "" H 7050 5000 50  0001 C CNN
+F 3 "" H 7050 5000 50  0001 C CNN
+	1    7050 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 4750 7050 5000
+Text Label 6500 3550 0    50   ~ 0
+OE
+Wire Wire Line
+	6650 3550 6500 3550
+Text HLabel 5100 3700 2    50   Input ~ 0
+UART1_TX
+Text HLabel 5100 3900 2    50   Output ~ 0
+UART1_RX
+Text HLabel 5100 4100 2    50   Input ~ 0
+UART2_TX
+Text HLabel 5100 4300 2    50   Output ~ 0
+UART2_RX
+Text HLabel 7700 3750 2    50   Input ~ 0
+UART3_TX
+Text HLabel 7700 3950 2    50   Output ~ 0
+UART3_RX
+Text HLabel 4000 3700 0    50   Output ~ 0
+TR_UART1_TX
+Text HLabel 4000 3900 0    50   Input ~ 0
+TR_UART1_RX
+Text HLabel 4000 4100 0    50   Output ~ 0
+TR_UART2_TX
+Text HLabel 4000 4300 0    50   Input ~ 0
+TR_UART2_RX
+Text HLabel 6450 3750 0    50   Output ~ 0
+TR_UART3_TX
+Text HLabel 6450 3950 0    50   Input ~ 0
+TR_UART3_RX
+Wire Wire Line
+	7700 3750 7450 3750
+Wire Wire Line
+	6650 3750 6450 3750
+Wire Wire Line
+	6650 3950 6450 3950
+Wire Wire Line
+	7450 3950 7700 3950
+Wire Wire Line
+	4150 3700 4000 3700
+Wire Wire Line
+	4950 3700 5100 3700
+Wire Wire Line
+	4000 3900 4150 3900
+Wire Wire Line
+	4950 3900 5100 3900
+Wire Wire Line
+	5100 4100 4950 4100
+Wire Wire Line
+	5100 4300 4950 4300
+Wire Wire Line
+	4150 4300 4000 4300
+Wire Wire Line
+	4150 4100 4000 4100
+$Comp
+L power:GND #PWR043
+U 1 1 61A0CCCA
+P 7650 4500
+F 0 "#PWR043" H 7650 4250 50  0001 C CNN
+F 1 "GND" H 7655 4327 50  0000 C CNN
+F 2 "" H 7650 4500 50  0001 C CNN
+F 3 "" H 7650 4500 50  0001 C CNN
+	1    7650 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 4150 7650 4150
+Wire Wire Line
+	7650 4150 7650 4350
+Wire Wire Line
+	7450 4350 7650 4350
+Connection ~ 7650 4350
+Wire Wire Line
+	7650 4350 7650 4500
+NoConn ~ 6650 4150
+NoConn ~ 6650 4350
+$EndSCHEMATC
