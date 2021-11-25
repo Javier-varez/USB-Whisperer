@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name TIRegulators)(type Legacy)(uri /Users/javier/Desktop/UsbWhisperer/lib/ti_reg.lib)(options "")(descr ""))
+)

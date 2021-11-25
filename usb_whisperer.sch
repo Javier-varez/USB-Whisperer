@@ -211,7 +211,7 @@ F1 "power.sch" 50
 F2 "VBUS" I R 2550 3950 50 
 $EndSheet
 Wire Wire Line
-	3000 3950 2550 3950
+	3000 3950 2800 3950
 Wire Wire Line
 	3800 3900 4200 3900
 Wire Wire Line
@@ -239,19 +239,15 @@ Wire Wire Line
 	5200 5550 5900 5550
 Wire Wire Line
 	5200 5750 5900 5750
-$Comp
-L power:+5V #PWR?
-U 1 1 61C230FC
-P 3900 2850
-F 0 "#PWR?" H 3900 2700 50  0001 C CNN
-F 1 "+5V" H 3915 3023 50  0000 C CNN
-F 2 "" H 3900 2850 50  0001 C CNN
-F 3 "" H 3900 2850 50  0001 C CNN
-	1    3900 2850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3900 2850 3900 2900
 Wire Wire Line
 	3900 2900 3800 2900
+Wire Wire Line
+	3900 2750 2800 2750
+Wire Wire Line
+	2800 2750 2800 3950
+Wire Wire Line
+	3900 2750 3900 2900
+Connection ~ 2800 3950
+Wire Wire Line
+	2800 3950 2550 3950
 $EndSCHEMATC
