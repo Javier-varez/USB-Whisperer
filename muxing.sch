@@ -110,10 +110,6 @@ Text Label 6450 2250 0    50   ~ 0
 USB_DEV_2_D-
 Wire Wire Line
 	7100 2250 6450 2250
-Text Label 8200 2150 0    50   ~ 0
-TR_UART2_TX
-Text Label 8200 2250 0    50   ~ 0
-TR_UART2_RX
 Wire Wire Line
 	8100 2150 8200 2150
 Wire Wire Line
@@ -149,10 +145,6 @@ Text Label 3200 4250 0    50   ~ 0
 SBU_2
 Wire Wire Line
 	3850 4250 3200 4250
-Text Label 4950 4150 0    50   ~ 0
-TR_UART3_TX
-Text Label 4950 4250 0    50   ~ 0
-TR_UART3_RX
 Wire Wire Line
 	4850 4150 4950 4150
 Wire Wire Line
@@ -175,14 +167,6 @@ Text Label 4550 6450 0    50   ~ 0
 TR_UART1_TX
 Text Label 4550 6550 0    50   ~ 0
 TR_UART1_RX
-Text Label 4550 6650 0    50   ~ 0
-TR_UART2_TX
-Text Label 4550 6750 0    50   ~ 0
-TR_UART2_RX
-Text Label 4550 6850 0    50   ~ 0
-TR_UART3_TX
-Text Label 4550 6950 0    50   ~ 0
-TR_UART3_RX
 Text HLabel 3750 4850 0    50   Input ~ 0
 BUS_3_MUX_SEL_1
 Text HLabel 7000 2750 0    50   Input ~ 0
@@ -215,16 +199,12 @@ F0 "Voltage Level Translation" 50
 F1 "level_translation.sch" 50
 F2 "UART1_TX" I L 3150 6450 50 
 F3 "UART1_RX" O L 3150 6550 50 
-F4 "UART2_TX" I L 3150 6650 50 
-F5 "UART2_RX" O L 3150 6750 50 
-F6 "UART3_TX" I L 3150 6850 50 
-F7 "UART3_RX" O L 3150 6950 50 
-F8 "TR_UART1_TX" O R 4450 6450 50 
-F9 "TR_UART1_RX" I R 4450 6550 50 
-F10 "TR_UART2_TX" O R 4450 6650 50 
-F11 "TR_UART2_RX" I R 4450 6750 50 
-F12 "TR_UART3_TX" O R 4450 6850 50 
-F13 "TR_UART3_RX" I R 4450 6950 50 
+F4 "TR_UART1_TX" O R 4450 6450 50 
+F5 "TR_UART1_RX" I R 4450 6550 50 
+F6 "I2C_SCL" B L 3150 6650 50 
+F7 "I2C_SDA" B L 3150 6750 50 
+F8 "TR_I2C_SCL" B R 4450 6650 50 
+F9 "TR_I2C_SDA" B R 4450 6750 50 
 $EndSheet
 Wire Wire Line
 	4450 6450 4550 6450
@@ -234,10 +214,6 @@ Wire Wire Line
 	4450 6650 4550 6650
 Wire Wire Line
 	4550 6750 4450 6750
-Wire Wire Line
-	4450 6850 4550 6850
-Wire Wire Line
-	4550 6950 4450 6950
 $Sheet
 S 7050 4000 1250 1050
 U 61A7ECF3
@@ -295,14 +271,6 @@ Text HLabel 3000 6450 0    50   Input ~ 0
 UART1_TX
 Text HLabel 3000 6550 0    50   Output ~ 0
 UART1_RX
-Text HLabel 3000 6650 0    50   Input ~ 0
-UART2_TX
-Text HLabel 3000 6750 0    50   Output ~ 0
-UART2_RX
-Text HLabel 3000 6850 0    50   Input ~ 0
-UART3_TX
-Text HLabel 3000 6950 0    50   Output ~ 0
-UART3_RX
 Wire Wire Line
 	3000 6450 3150 6450
 Wire Wire Line
@@ -311,10 +279,6 @@ Wire Wire Line
 	3000 6650 3150 6650
 Wire Wire Line
 	3150 6750 3000 6750
-Wire Wire Line
-	3000 6850 3150 6850
-Wire Wire Line
-	3150 6950 3000 6950
 Text HLabel 6900 4150 0    50   BiDi ~ 0
 USB_AUX_D+
 Text HLabel 6900 4250 0    50   BiDi ~ 0
@@ -345,14 +309,6 @@ Text Label 1350 2250 0    50   ~ 0
 UART1_TX
 Text Label 1350 2350 0    50   ~ 0
 UART1_RX
-Text Label 1350 2450 0    50   ~ 0
-UART2_TX
-Text Label 1350 2550 0    50   ~ 0
-UART2_RX
-Text Label 1350 3600 0    50   ~ 0
-UART3_TX
-Text Label 1350 3700 0    50   ~ 0
-UART3_RX
 $Comp
 L power:+3.3V #PWR019
 U 1 1 61A2A473
@@ -384,10 +340,6 @@ Wire Wire Line
 Wire Wire Line
 	1250 2550 1350 2550
 Wire Wire Line
-	1350 3600 1250 3600
-Wire Wire Line
-	1250 3700 1350 3700
-Wire Wire Line
 	1250 2650 1450 2650
 Wire Wire Line
 	1450 2650 1450 2750
@@ -395,47 +347,6 @@ Wire Wire Line
 	1450 2050 1450 2150
 Wire Wire Line
 	1450 2150 1250 2150
-$Comp
-L power:+3.3V #PWR023
-U 1 1 61A3EEDE
-P 1450 3400
-F 0 "#PWR023" H 1450 3250 50  0001 C CNN
-F 1 "+3.3V" H 1465 3573 50  0000 C CNN
-F 2 "" H 1450 3400 50  0001 C CNN
-F 3 "" H 1450 3400 50  0001 C CNN
-	1    1450 3400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR025
-U 1 1 61A3EEE4
-P 1450 4100
-F 0 "#PWR025" H 1450 3850 50  0001 C CNN
-F 1 "GND" H 1455 3927 50  0000 C CNN
-F 2 "" H 1450 4100 50  0001 C CNN
-F 3 "" H 1450 4100 50  0001 C CNN
-	1    1450 4100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1250 4000 1450 4000
-Wire Wire Line
-	1450 4000 1450 4100
-Wire Wire Line
-	1450 3400 1450 3500
-Wire Wire Line
-	1450 3500 1250 3500
-$Comp
-L Connector_Generic:Conn_01x06 J11
-U 1 1 61A4FE69
-P 1050 3800
-F 0 "J11" H 968 3275 50  0000 C CNN
-F 1 "Conn_01x06" H 968 3366 50  0000 C CNN
-F 2 "" H 1050 3800 50  0001 C CNN
-F 3 "~" H 1050 3800 50  0001 C CNN
-	1    1050 3800
-	-1   0    0    1   
-$EndComp
 $Comp
 L Connector_Generic:Conn_01x06 J10
 U 1 1 61A546CA
@@ -447,14 +358,10 @@ F 3 "~" H 1050 2450 50  0001 C CNN
 	1    1050 2450
 	-1   0    0    1   
 $EndComp
-Text Label 1350 3800 0    50   ~ 0
+Text Label 1350 2450 0    50   ~ 0
 I2C2_SCL
-Text Label 1350 3900 0    50   ~ 0
+Text Label 1350 2550 0    50   ~ 0
 I2C2_SDA
-Wire Wire Line
-	1350 3800 1250 3800
-Wire Wire Line
-	1250 3900 1350 3900
 $Comp
 L Connector:TestPoint TP9
 U 1 1 61A8EFBE
@@ -575,4 +482,12 @@ Wire Wire Line
 	10100 3800 9950 3800
 Wire Wire Line
 	9950 4100 10100 4100
+Text Label 8200 2150 0    50   ~ 0
+TR_UART1_TX
+Text Label 8200 2250 0    50   ~ 0
+TR_UART1_RX
+Text Label 4950 4150 0    50   ~ 0
+TR_UART1_TX
+Text Label 4950 4250 0    50   ~ 0
+TR_UART1_RX
 $EndSCHEMATC

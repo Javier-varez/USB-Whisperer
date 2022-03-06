@@ -278,9 +278,10 @@ P 5600 1650
 AR Path="/619F286D" Ref="U?"  Part="1" 
 AR Path="/619A9DB6/619F286D" Ref="U3"  Part="1" 
 F 0 "U3" H 5600 1161 50  0000 C CNN
-F 1 "FUSB302BMPX" H 5600 1070 50  0000 C CNN
+F 1 "FUSB302MPX" H 5600 1070 50  0000 C CNN
 F 2 "Package_DFN_QFN:WQFN-14-1EP_2.5x2.5mm_P0.5mm_EP1.45x1.45mm" H 5600 1150 50  0001 C CNN
 F 3 "http://www.onsemi.com/pub/Collateral/FUSB302B-D.PDF" H 5700 1250 50  0001 C CNN
+F 4 "C442699" H 5600 1650 50  0001 C CNN "LCSC"
 	1    5600 1650
 	1    0    0    -1  
 $EndComp
@@ -521,6 +522,7 @@ F 0 "U1" H 3550 5881 50  0000 C CNN
 F 1 "USB6B1" H 3550 5790 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3550 5400 50  0001 C CNN
 F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/3e/ec/b2/54/b2/76/47/90/CD00001361.pdf/files/CD00001361.pdf/jcr:content/translations/en.CD00001361.pdf" H 2600 5300 50  0001 C CNN
+F 4 "C10508" H 3550 5400 50  0001 C CNN "LCSC"
 	1    3550 5400
 	1    0    0    -1  
 $EndComp
@@ -567,6 +569,7 @@ F 0 "U4" H 5600 5881 50  0000 C CNN
 F 1 "USB6B1" H 5600 5790 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5600 5400 50  0001 C CNN
 F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/3e/ec/b2/54/b2/76/47/90/CD00001361.pdf/files/CD00001361.pdf/jcr:content/translations/en.CD00001361.pdf" H 4650 5300 50  0001 C CNN
+F 4 "C10508" H 5600 5400 50  0001 C CNN "LCSC"
 	1    5600 5400
 	1    0    0    -1  
 $EndComp
@@ -613,6 +616,7 @@ F 0 "U5" H 5600 7181 50  0000 C CNN
 F 1 "USB6B1" H 5600 7090 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5600 6700 50  0001 C CNN
 F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/3e/ec/b2/54/b2/76/47/90/CD00001361.pdf/files/CD00001361.pdf/jcr:content/translations/en.CD00001361.pdf" H 4650 6600 50  0001 C CNN
+F 4 "C10508" H 5600 6700 50  0001 C CNN "LCSC"
 	1    5600 6700
 	1    0    0    -1  
 $EndComp
@@ -659,6 +663,7 @@ F 0 "U2" H 3550 7181 50  0000 C CNN
 F 1 "USB6B1" H 3550 7090 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3550 6700 50  0001 C CNN
 F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/3e/ec/b2/54/b2/76/47/90/CD00001361.pdf/files/CD00001361.pdf/jcr:content/translations/en.CD00001361.pdf" H 2600 6600 50  0001 C CNN
+F 4 "C10508" H 3550 6700 50  0001 C CNN "LCSC"
 	1    3550 6700
 	1    0    0    -1  
 $EndComp
